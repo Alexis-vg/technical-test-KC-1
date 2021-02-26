@@ -1,0 +1,32 @@
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "main-kane-slides"
+                        " main-login";
+    justify-items: center;
+}
+.main-kane-slides .picture-container .picture-container__img {
+    width: 100%;
+    height: 100vh;
+    vertical-align: top;
+}
+.main-grid .main-login {
+    grid-area: main-login;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    width: 70%;
+    height: 100vh;
+}
+.main-login .social-networks {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.main-login .main-login__email-input, .main-login__password-input {
+    border-radius: 3px;
+    border: 1px solid #8395A7;
+    height: 50px;    
+}

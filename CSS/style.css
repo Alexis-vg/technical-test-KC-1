@@ -1,0 +1,134 @@
+:root {
+  /*
+    *Main Content Colors
+    */
+  --color-white: #ffffff;
+  --color-black-less: #222f3e;
+  --color-less-gray: #8395a7;
+  --color-session-button: #354bd4;
+  --color-password-forgotten: #6c5dd3;
+  --color-new-register: #3345d7;
+  --color-grayer: #576574;
+  --color-grayiest: #00000099;
+  /*
+    *gray scale color
+    */
+  --black: rgb(0, 0, 0);
+  --darkgray: #4d4d4d;
+  --gray: #737373;
+  --lightgray: #bfbfbf;
+  --white: rgb(255, 255, 255);
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}
+a {
+  text-decoration: none;
+}
+.main-grid {
+  display: grid;
+  grid-template-areas: "main-kane-slides main-login";
+  grid-template-columns: 1.1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+}
+.main-grid .main-kane-slides {
+  grid-area: main-kane-slides;
+}
+.main-kane-slides .picture-container .picture-container__img {
+  width: 100%;
+  height: 625px;
+  vertical-align: top;
+}
+.main-grid .main-login {
+  grid-area: main-login;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 64%;
+  height: 100vh;
+}
+.main-grid .main-login .main-login__title {
+  font-size: 3.2rem;
+}
+.main-grid .main-login .main-login__info {
+  margin: 0;
+  color: var(--color-less-gray);
+}
+.main-login .social-networks {
+  display: flex;
+  justify-content: space-between;
+}
+.main-login .social-networks span {
+  display: inline-block;
+  width: 119px;
+  height: 43px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main-login .main-login__email-input,
+.main-login__password-input {
+  border-radius: 3px;
+  border: 1px solid #8395a7;
+  height: 50px;
+  width: 100%;
+  padding-left: 15px;
+}
+.main-login .form-password {
+  position: relative;
+}
+.main-login .form-password .hide-pass-logo {
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+  background-image: url("/assets/icons/eye-closed.svg");
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main-login .main-login__email-input::placeholder {
+  font-size: 1.4rem;
+}
+.main-login .main-login__password-input::placeholder {
+  font-size: 1.4rem;
+}
+.main-login .social-networks .social-networks__facebook {
+  background-image: url("/assets/images/facebook-logo.svg");
+}
+.main-login .social-networks .social-networks__google {
+  background-image: url("/assets/images/facebook-logo.svg");
+}
+.main-login .social-networks .social-networks__linkedin {
+  background-image: url("/assets/images/facebook-logo.svg");
+}
+.main-login .main-login__forgotten-password {
+  display: flex;
+  justify-content: flex-end;
+  color: var(--color-password-forgotten);
+}
+.main-login .main-login__btn-start-session {
+  display: flex;
+  justify-content: center;
+}
+.main-login .main-login__btn-start-session button {
+  width: 275px;
+  height: 56px;
+  background-color: var(--color-new-register);
+  border: none;
+  color: var(--color-white);
+  border-radius: 50px;
+  font-size: 1.4rem;
+}
+.main-login .main-login__create-account {
+  display: flex;
+  justify-content: center;
+  color: var(--color-grayer);
+}
+.main-login .main-login__create-account a {
+  color: var(--color-new-register);
+}
