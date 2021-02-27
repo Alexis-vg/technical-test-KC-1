@@ -91,6 +91,16 @@ a {
   background-repeat: no-repeat;
   background-position: center;
 }
+.main-login .form-password .show-pass-logo {
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+  background-image: url("/assets/icons/eye-open.svg");
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .main-login .main-login__email-input::placeholder {
   font-size: 1.4rem;
 }

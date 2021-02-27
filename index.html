@@ -14,11 +14,8 @@
 <body>
     <main>
         <section class="main-grid">
-            <div class="main-kane-slides">
-                <picture class="picture-container"  class="img1-container">
-                    <source media="(max-width:768px)" srcset="/assets/images/Foto1.png" />
-                    <img class="picture-container__img" src="/assets/images/Foto1_2x.png" alt="images" />
-                </picture>
+            <div id="slides" class="main-kane-slides">
+                
             </div>
             <div class="main-login">
                 <h1 class="main-login__title">Iniciar sesión</h1>
@@ -29,9 +26,9 @@
                     <span class="social-networks__linkedin"></span>
                 </div>
                 <form action="" style="width: 100%;">
-                    <input class="main-login__email-input" type="text" placeholder="Correo electronico">
+                    <input class="main-login__email-input" type="email" placeholder="Correo electronico" autocomplete="email" required>
                 </form>
-                <form class="form-password" action="" style="width: 100%;">
+                <form id="show/hide-password" class="form-password" action="" style="width: 100%;">
                     <input class="main-login__password-input" type="password" placeholder="Contraseña">
                     <span class="hide-pass-logo"></span>
                 </form>
@@ -45,5 +42,8 @@
             </div>
         </section>
     </main>
+    <script src="/index.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </body>
 </html>
