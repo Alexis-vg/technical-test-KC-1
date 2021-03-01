@@ -85,7 +85,7 @@ a {
   position: absolute;
   right: 0;
   bottom: 15px;
-  background-image: url("/assets/icons/eye-closed.svg");
+  background-image: url("../assets/icons/eye-closed.svg");
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
@@ -95,7 +95,7 @@ a {
   position: absolute;
   right: 0;
   bottom: 15px;
-  background-image: url("/assets/icons/eye-open.svg");
+  background-image: url("../assets/icons/eye-open.svg");
   width: 25px;
   height: 25px;
   background-repeat: no-repeat;
@@ -108,13 +108,37 @@ a {
   font-size: 1.4rem;
 }
 .main-login .social-networks .social-networks__facebook {
-  background-image: url("/assets/images/facebook-logo.svg");
+  background-image: url("../assets/icons/facebook.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 43px;
+  border-radius: 10px;
+  background-color: #3a559f;
+  border: none;
+  margin-right: 15px;
 }
 .main-login .social-networks .social-networks__google {
-  background-image: url("/assets/images/facebook-logo.svg");
+  background-image: url("../assets/icons/2000px-Google_G_Logo.svg_@2x.png");
+  background-repeat: no-repeat;
+  background-size: 17px;
+  background-position: center;
+  width: 120px;
+  height: 43px;
+  border-radius: 10px;
+  background-color: var(--color-white);
+  border: 1px var(--lightgray) solid;
+  margin-right: 15px;
 }
 .main-login .social-networks .social-networks__linkedin {
-  background-image: url("/assets/images/facebook-logo.svg");
+  background-image: url("../assets/icons/Icon\ awesome-linkedin-in.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 120px;
+  height: 43px;
+  border-radius: 10px;
+  background-color: #0077b7;
+  border: none;
 }
 .main-login .main-login__forgotten-password {
   display: flex;
